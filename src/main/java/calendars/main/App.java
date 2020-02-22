@@ -3,6 +3,7 @@ package calendars.main;
 import calendars.year.YearCalendar;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class App extends Application {
@@ -18,6 +19,8 @@ public class App extends Application {
 		calendar.setStyled(true);
 		
 		primaryStage.setScene(scene);
+		primaryStage.setTitle("Calendario");
+		primaryStage.getIcons().add(new Image(getClass().getResource("/images/calendar.png").toString()));
 		primaryStage.show();
 	}
 
